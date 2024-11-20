@@ -45,7 +45,7 @@
         }
         .row4 {
             display: flex;
-            background-color: whitesmoke;
+            background-color: rgb(105, 70, 70);
             justify-content: space-around;
             padding: 20px;
             height: 100vh;
@@ -59,28 +59,64 @@
             height: 100vh;
             align-items: center;
         }
+        .row6 {
+            display: flex;
+            background-color: white;
+            justify-content: space-around;
+            padding: 20px;
+            height: 100vh;
+            align-items: center;
+        }
         .box {
             padding: 10px;
         }
-    </style>
+        .box1 {
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            margin: 10px;
+            border-radius: 10px;
+            
+        }
+        li{
+            display: inline;
+            padding: 5px;
+            font-size: larger;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: yellow;
+            text-decoration: underline;
+            
+        }
+        .imgclass{
+            border-radius: 100px;
+        }
+        </style>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="box"> <h1> Harshita Peduru </h1> </div>
             <div class="box"> 
-                <a href="#home"> Home </a> | 
-                <a href="#projects"> Projects </a> | 
-                <a href="#About"> About </a> | 
-                <a href="#Services"> Services </a> | 
-                <a href="#Contact"> Contact </a> 
+                <ul>
+                    <li><a href="#home"> Home </a></li>
+                    <li><a href="#projects"> Projects </a></li>
+                    <li><a href="#About"> About </a></li>
+                    <li><a href="#Services"> Services </a></li>
+                    <li><a href="#Contact"> Contact </a> </li>
+                </ul>
+                
+                
             </div>
         </div>
         <div class="row1" id="home">
             <div> 
                 <h1> Harshita Peduru </h1> 
-                <h3> Web Developer </h3></div>
-            <div> <img src = "https://picsum.photos/id/264/200/300"> </div>
+                <h3> FullStack Developer </h3></div>
+            <div> <img class="imgclass" src = "https://picsum.photos/id/264/300/300"> </div>
         </div>
         <div class="row2" id="projects">
             <div> 
@@ -98,13 +134,39 @@
         </div>
     </div>
     <div class="row4" id="Services">
-        <div>
+        <!-- <h1>Services</h1> -->
+        <div class="box1">
+            <h3>Web Application development</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Laborum in aliquid modi labore rerum quibusdam accusantium voluptates
+                  earum tempora praesentium, necessitatibus libero at minus doloribus, quis quaerat tempore? Iste, distinctio.
+            </p>
+
+        </div>
+        <div class="box1">
+            <h3>Mobile Application Development</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Laborum in aliquid modi labore rerum quibusdam accusantium voluptates
+                  earum tempora praesentium, necessitatibus libero at minus doloribus, quis quaerat tempore? Iste, distinctio.
+            </p>
+        </div>
+        <div class="box1">
+            <h3>Backend Development</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Laborum in aliquid modi labore rerum quibusdam accusantium voluptates
+                  earum tempora praesentium, necessitatibus libero at minus doloribus, quis quaerat tempore? Iste, distinctio.
+            </p>
+        </div>
+        <!-- <div>
             <h1>Services</h1>
             <ol>
                 <li>Project 1</li>
                 <li>Project 2</li>
             </ol>
-        </div>
+        </div> -->
     </div>
     <div class="row5" id="Contact">
         <div>
@@ -115,6 +177,6 @@
         </ol>
         </div>
     </div>
-   <div>@copywrite </div>
+   <div class="row6" id="copyright">@copyright </div>
 </body>
 </html>
